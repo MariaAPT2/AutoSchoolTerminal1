@@ -1,0 +1,123 @@
+﻿<Page x:Class="AutoSchoolTerminal.Pages.TestPageOneInstructor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSchoolTerminal.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="300"
+      Title="TestPageOneInstructor">
+
+    <Border Background="White" 
+            BorderBrush="Black" 
+            BorderThickness="4" 
+            CornerRadius="30">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="220"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" >
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Resources/backgroundForUserCard.jpg" 
+                                Stretch="Fill"/>
+                </Grid.Background>
+                <Ellipse Width="180" 
+                         Height="180" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Center" 
+                         Stroke="White" 
+                         StrokeThickness="6">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Resources/vk_icon.png" 
+                                    Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Grid>
+            <StackPanel Grid.Row="1" 
+                        Orientation="Vertical" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Top" 
+                        Margin="0 10 0 0">
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center">
+                    <TextBlock Text="JAMES"
+                               Foreground="#000000"
+                               FontSize="26"
+                               Margin="0 0 3 0" 
+                               FontWeight="UltraBold"/>
+                    <TextBlock Text="JAMES"
+                               Foreground="#85CFF7"
+                               FontSize="26"
+                               Margin="3 0 00 0"
+                               FontWeight="DemiBold"/>
+                </StackPanel>
+                <Grid Width="250" Margin="0 5 0 0">
+                    <Rectangle Fill="Transparent">
+                        <Rectangle.Stroke>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="Red" Offset="0"/>
+                                <GradientStop Color="Blue" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Stroke>
+                        <Rectangle.StrokeDashArray>
+                            <DoubleCollection>7 3</DoubleCollection>
+                        </Rectangle.StrokeDashArray>
+                    </Rectangle>
+                </Grid>
+                <Grid Margin="0 5 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0*"/>
+                        <RowDefinition Height="0*"/>
+                        <RowDefinition Height="0*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                        <Image 
+                            Width="30"
+                            Height="30"
+                            Margin="0 0 5 0"
+                            Source="/Resources/logo.png" 
+                            Stretch="UniformToFill"/>
+                        <TextBlock Text="EMAIL"
+                                   FontWeight="Medium"
+                                   Foreground="#85CFF7"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
+                        <Image 
+                            Width="30"
+                            Height="30"
+                            Margin="0 0 5 0"
+                            Source="/Resources/logo.png" 
+                            Stretch="UniformToFill"/>
+                        <TextBlock Text="PHONE"
+                                   FontWeight="Medium"
+                                   Foreground="#85CFF7"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0">
+                        <Image 
+                            Width="30"
+                            Height="30"
+                            Margin="0 0 5 0"
+                            Source="/Resources/logo.png" 
+                            Stretch="UniformToFill"/>
+                        <TextBlock Text="HAIRDATE"
+                                   FontWeight="Medium"
+                                   Foreground="#85CFF7"/>
+                    </StackPanel>
+                    <TextBlock Text="Test" Grid.Column="1" Grid.Row="0"/>
+                    <TextBlock Text="Test" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Text="Test" Grid.Column="1" Grid.Row="2"/>
+                </Grid>
+                <TextBlock Text="Description" 
+                           Margin="0 10 0 0"
+                           FontWeight="Light"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,67 @@
+﻿<Page x:Class="AutoSchoolTerminal.Pages.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSchoolTerminal.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1500"
+      Title="InfoPage">
+
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#85CFF7" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Vertical"
+                        Margin="0 20 0 0">
+                <TextBlock Style="{StaticResource DescriptionOfAutoScholText}"
+                           Text="Автошкола «Дорожный Ритм» - это современное учебное заведение, специализирующееся на обучении вождению и подготовке будущих водителей к безопасному управлению автомобилем. Мы предлагаем высококачественные услуги обучения, индивидуальный подход к каждому ученику и комфортные условия для получения навыков вождения."/>
+                <TextBlock Style="{StaticResource DescriptionOfAutoScholText}"
+                           Text="Наша миссия состоит в том, чтобы помочь нашим студентам стать уверенными и ответственными водителями, соблюдающими правила дорожного движения и способными эффективно реагировать на любые ситуации на дороге. Мы стремимся к тому, чтобы каждый выпускник нашей автошколы получил не только водительские права, но и навыки, необходимые для безопасного управления автомобилем в любых условиях."/>
+                <TextBlock Style="{StaticResource DescriptionOfAutoScholText}"
+                           Text="Наши инструкторы - высококвалифицированные специалисты с многолетним опытом работы, которые с большим вниманием относятся к обучению каждого ученика. Мы используем современные методики обучения и оборудование, что позволяет нам обеспечить высокий уровень обучения и комфортные условия для наших студентов."/>
+                <TextBlock Style="{StaticResource DescriptionOfAutoScholText}"
+                           Text="Присоединяйтесь к «Дорожный Ритм» и начните свой путь к успешному вождению уже сегодня!"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical"
+                            Margin="0 0 0 0">
+                    <TextBlock Text="Адреса" Style="{StaticResource HeaderFooterText}"/>
+                    <TextBlock Text="г. Амурск, ул. Строителей, 77" Style="{StaticResource ContactsText}"/>
+                    <TextBlock Text="г. Комсомольск-на-Амуре, ул. Пушкина, 22" Style="{StaticResource ContactsText}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            Margin="80 0 80 0">
+                    <TextBlock Text="КОНТАКТЫ" Style="{StaticResource HeaderFooterText}"/>
+                    <TextBlock Text="+7 (924) 410-80-73" Style="{StaticResource ContactsText}"/>
+                    <TextBlock Text="RoadRhythm@gmail.com" Style="{StaticResource ContactsText}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            Margin="0 0 0 0">
+                    <TextBlock Text="СОЦИАЛЬНЫЕ МЕДИА" Style="{StaticResource HeaderFooterText}"/>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Image ToolTip="Вконтакте" Source="/Resources/vk_icon.png" Style="{StaticResource ImageLinksStyles}"/>
+                        <Image ToolTip="Instagram" Source="/Resources/instagram_icon.png" Style="{StaticResource ImageLinksStyles}"/>
+                        <Image ToolTip="WhatsApp" Source="/Resources/whatsapp_icon.png" Style="{StaticResource ImageLinksStyles}"/>
+                        <Image ToolTip="X (Twitter)" Source="/Resources/x(twitter)_icon.png" Style="{StaticResource ImageLinksStyles}"/>
+                        <Image ToolTip="YouTube" Source="/Resources/youtube_icon.png" Style="{StaticResource ImageLinksStyles}"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

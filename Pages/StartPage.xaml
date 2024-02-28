@@ -1,0 +1,28 @@
+﻿<Page x:Class="AutoSchoolTerminal.Pages.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSchoolTerminal.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1500"
+      Title="StartPage">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#85CFF7" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <WrapPanel HorizontalAlignment="Center"
+           VerticalAlignment="Center" 
+           ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <UniformGrid Columns="2">
+                <Button x:Name="btnSchedule" Content="Расписание" Style="{StaticResource MainButtonStyle}" Margin="0 0 120 100" Click="btnSchedule_Click"/>
+                <Button x:Name="btnInstructors" Content="Инструктора" Style="{StaticResource MainButtonStyle}" Margin="120 0 0 100" Click="btnInstructors_Click"/>
+                <Button x:Name="btnPayment" Content="Оплата" Style="{StaticResource MainButtonStyle}" Margin="0 100 120 0" Click="btnPayment_Click"/>
+                <Button x:Name="btnLK" Content="Личный кабинет" Style="{StaticResource MainButtonStyle}" Margin="120 100 0 0" Click="btnLK_Click"/>
+            </UniformGrid>
+        </WrapPanel>
+    </Grid>
+</Page>

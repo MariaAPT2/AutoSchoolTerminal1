@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="54171b5cf3d843b096f37f7f2bfcd0cf" Name="Diagram1" ZoomLevel="114">
+        <EntityTypeShape EntityType="DataBaseModel.CourseRegistrations" Width="1.5" PointX="10.5" PointY="6.625" />
+        <EntityTypeShape EntityType="DataBaseModel.Courses" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="DataBaseModel.DrivingLessons" Width="1.5" PointX="7.5" PointY="8.75" />
+        <EntityTypeShape EntityType="DataBaseModel.DurationList" Width="1.5" PointX="5.25" PointY="13.875" />
+        <EntityTypeShape EntityType="DataBaseModel.ExamResults" Width="1.5" PointX="10.5" PointY="9.5" />
+        <EntityTypeShape EntityType="DataBaseModel.Instructors" Width="1.5" PointX="5.25" PointY="4.25" />
+        <EntityTypeShape EntityType="DataBaseModel.Lessons" Width="1.5" PointX="7.5" PointY="4.875" />
+        <EntityTypeShape EntityType="DataBaseModel.Roles" Width="1.5" PointX="0.75" PointY="7.5" />
+        <EntityTypeShape EntityType="DataBaseModel.Students" Width="1.5" PointX="5.25" PointY="8.875" />
+        <EntityTypeShape EntityType="DataBaseModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="DataBaseModel.Users" Width="1.5" PointX="3" PointY="7.125" />
+        <AssociationConnector Association="DataBaseModel.FK__CourseReg__Cours__2F10007B" />
+        <AssociationConnector Association="DataBaseModel.FK__CourseReg__Stude__2E1BDC42" />
+        <AssociationConnector Association="DataBaseModel.FK__ExamResul__Cours__32E0915F" />
+        <AssociationConnector Association="DataBaseModel.FK__Lessons__CourseI__2A4B4B5E" />
+        <AssociationConnector Association="DataBaseModel.FK_DrivingLessons_DurationList" />
+        <AssociationConnector Association="DataBaseModel.FK_Instructor" />
+        <AssociationConnector Association="DataBaseModel.FK_Student" />
+        <AssociationConnector Association="DataBaseModel.FK_Lessons_DurationList" />
+        <AssociationConnector Association="DataBaseModel.FK__ExamResul__Stude__31EC6D26" />
+        <AssociationConnector Association="DataBaseModel.FK__Lessons__Instruc__2B3F6F97" />
+        <AssociationConnector Association="DataBaseModel.FK_Instructors_Users" />
+        <AssociationConnector Association="DataBaseModel.FK__Users__RoleID__3B75D760" />
+        <AssociationConnector Association="DataBaseModel.FK_Students_Users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

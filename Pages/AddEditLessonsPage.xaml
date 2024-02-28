@@ -1,0 +1,36 @@
+﻿<Page x:Class="AutoSchoolTerminal.Pages.AddEditLessonsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSchoolTerminal.Pages" 
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1500"
+      Title="AddEditLessonsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#85CFF7" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Дата проведения:" Style="{StaticResource TextInputColumns}"/>
+            <DatePicker x:Name="dpDate" Loaded="DatePicker_Loaded" SelectedDate="{Binding LessonDate}" />
+            <TextBlock Text="Время проведения:" Style="{StaticResource TextInputColumns}"/>
+            <TextBox x:Name="txtBTime" Style="{StaticResource InputAuthDataTextBox}" Width="400" Text="{Binding LessonTime, StringFormat='hh\\:mm'}"/>
+            <TextBlock Text="Продолжительность:" Style="{StaticResource TextInputColumns}"/>
+            <ComboBox x:Name="cmbDuration" Style="{StaticResource SelectInputColumns}" DisplayMemberPath="DurationOnMinutesWithWords" SelectedItem="{Binding DurationList}"/>
+            <TextBlock Text="Группа:" Style="{StaticResource TextInputColumns}"/>
+            <ComboBox x:Name="cmCourses" Style="{StaticResource SelectInputColumns}" SelectedItem="{Binding Courses}" DisplayMemberPath="nameAndID" Width="480"/>
+            <TextBlock Text="Инструктор:" Style="{StaticResource TextInputColumns}"/>
+            <ComboBox x:Name="cmbInsructors" Style="{StaticResource SelectInputColumns}" DisplayMemberPath="FullName" SelectedItem="{Binding Instructors}"/>
+        </StackPanel>
+        <Button x:Name="btnSave" Click="btnSave_Click" Content="Сохранить" Style="{StaticResource MainButtonStyle}" HorizontalAlignment="Center" Width="230" Height="70" FontSize="30" Grid.Row="1"/>
+    </Grid>
+</Page>
